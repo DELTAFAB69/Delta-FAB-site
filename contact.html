@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact & devis | Delta Fab</title>
+<meta name="description" content="Contactez Delta Fab pour votre projet de gravure laser, médaille personnalisée ou impression 3D. Demandez un devis à contact@deltafab.fr.">
+<style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #090909;
+            color: #f5f5f5;
+            line-height: 1.6;
+        }
+
+        /* HEADER */
+
+        header {
+            background: #050505;
+            border-bottom: 1px solid #252525;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 12px 25px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header-logo {
+            width: 190px;
+            max-width: 40%;
+        }
+
+        nav a {
+            color: #ddd;
+            text-decoration: none;
+            margin-left: 25px;
+            font-size: 15px;
+        }
+
+        nav a:hover {
+            color: #e30613;
+        }
+
+        /* HERO */
+
+        .hero {
+            min-height: 85vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 70px 20px;
+            background:
+                radial-gradient(circle at center, #252525 0%, #101010 45%, #050505 100%);
+        }
+
+        .hero-content {
+            max-width: 900px;
+        }
+
+        .hero-logo {
+            width: 620px;
+            max-width: 90%;
+            margin-bottom: 35px;
+        }
+
+        .hero h1 {
+            font-size: 42px;
+            margin-bottom: 15px;
+        }
+
+        .hero h1 span {
+            color: #e30613;
+        }
+
+        .hero p {
+            color: #bbb;
+            font-size: 20px;
+            max-width: 750px;
+            margin: 0 auto 35px;
+        }
+
+        .button {
+            display: inline-block;
+            background: #e30613;
+            color: white;
+            text-decoration: none;
+            padding: 14px 28px;
+            margin: 7px;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: 0.2s;
+        }
+
+        .button:hover {
+            background: #ff1c2b;
+            transform: translateY(-2px);
+        }
+
+        .button-secondary {
+            background: transparent;
+            border: 1px solid #777;
+        }
+
+        /* SECTIONS */
+
+        section {
+            padding: 80px 20px;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 34px;
+            margin-bottom: 15px;
+        }
+
+        .section-intro {
+            text-align: center;
+            color: #aaa;
+            max-width: 750px;
+            margin: 0 auto 50px;
+        }
+
+        /* CARDS */
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+        }
+
+        .card {
+            background: #151515;
+            border: 1px solid #292929;
+            border-radius: 10px;
+            padding: 35px;
+            transition: 0.2s;
+        }
+
+        .card:hover {
+            border-color: #e30613;
+            transform: translateY(-3px);
+        }
+
+        .card h3 {
+            color: #e30613;
+            margin-bottom: 12px;
+            font-size: 22px;
+        }
+
+        .card p {
+            color: #bbb;
+        }
+
+        /* PRO / PARTICULIERS */
+
+        .audiences {
+            background: #101010;
+        }
+
+        .audience-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+
+        .audience {
+            padding: 45px;
+            background: #171717;
+            border-radius: 10px;
+            border-top: 3px solid #e30613;
+        }
+
+        .audience h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .audience ul {
+            margin: 20px 0 30px 20px;
+            color: #bbb;
+        }
+
+        .audience li {
+            margin-bottom: 8px;
+        }
+
+        /* CONTACT */
+
+        .contact {
+            text-align: center;
+            background: #141414;
+        }
+
+        .contact p {
+            color: #aaa;
+            margin: 15px auto 30px;
+            max-width: 700px;
+        }
+
+        /* FOOTER */
+
+        footer {
+            background: #050505;
+            text-align: center;
+            color: #777;
+            padding: 35px 20px;
+            font-size: 14px;
+        }
+
+        footer img {
+            width: 160px;
+            margin-bottom: 15px;
+        }
+
+        /* MOBILE */
+
+        @media (max-width: 750px) {
+
+            nav {
+                display: none;
+            }
+
+            .header-logo {
+                width: 160px;
+            }
+
+            .hero {
+                min-height: 75vh;
+            }
+
+            .hero h1 {
+                font-size: 31px;
+            }
+
+            .hero p {
+                font-size: 17px;
+            }
+
+            .cards,
+            .audience-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .audience {
+                padding: 30px;
+            }
+        }
+
+        /* Galeries de démonstration */
+        [id] { scroll-margin-top: 110px; }
+        .showcase { background: #111; }
+        .eyebrow { color: #d5ae70; text-align: center; text-transform: uppercase; letter-spacing: .16em; font-size: 12px; margin-bottom: 12px; }
+        .gallery-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 26px; }
+        .gallery-item { overflow: hidden; border: 1px solid #303030; border-radius: 10px; background: #171717; }
+        .gallery-item a { display: block; }
+        .gallery-item img { display: block; width: 100%; height: auto; }
+        .gallery-item figcaption { padding: 22px 25px; }
+        .gallery-item h3 { font-size: 21px; margin-bottom: 7px; }
+        .gallery-item p, .gallery-note { color: #aaa; font-size: 15px; }
+        .gallery-wide { grid-column: 1 / -1; }
+        .gallery-note, .gallery-cta { text-align: center; margin-top: 28px; }
+        .card img { width: 100%; height: auto; border-radius: 6px; margin-bottom: 22px; }
+        a:focus-visible { outline: 3px solid #f5bc62; outline-offset: 4px; }
+        @media (max-width: 750px) {
+            .gallery-grid { grid-template-columns: 1fr; }
+            .gallery-item figcaption { padding: 20px; }
+            .header-logo { max-width: 100%; }
+        }
+        @media (prefers-reduced-motion: reduce) {
+            html { scroll-behavior: auto; }
+            *, *::before, *::after { transition: none !important; }
+        }
+    
+.contact-header-link{color:#eee;text-decoration:none;font-weight:bold;padding:12px}
+.contact-main{max-width:1000px;margin:auto;padding:65px 22px 80px}
+.contact-main h1{font-size:clamp(32px,5vw,48px);line-height:1.2;margin:14px 0 20px}
+.contact-lead{color:#bbb;font-size:19px;max-width:720px;margin-bottom:36px}
+.contact-layout{display:grid;grid-template-columns:1.2fr 1fr;gap:26px}
+.contact-panel{background:#171717;border:1px solid #333;border-radius:12px;padding:30px}
+.contact-panel h2{font-size:23px;margin-bottom:16px}
+.contact-address{display:block;color:#fff;font-size:clamp(20px,3vw,27px);overflow-wrap:anywhere;margin:20px 0}
+.contact-panel .button{margin:6px 0;padding:12px 18px;font:inherit;font-weight:bold;cursor:pointer;border:1px solid transparent}
+.contact-panel .button-secondary{border-color:#666}
+.contact-panel p,.contact-panel li{color:#bbb}
+.contact-panel ul{padding-left:20px;margin:16px 0}
+.contact-panel li{margin-bottom:12px}
+.contact-help{font-size:14px;margin:18px 0 0}
+.contact-status{min-height:1.6em;margin-top:10px;color:#f5bc62!important}
+.contact-email-options{display:flex;gap:10px;flex-wrap:wrap}
+button:focus-visible{outline:3px solid #f5bc62;outline-offset:4px}
+@media(max-width:750px){.contact-layout{grid-template-columns:1fr}.contact-panel{padding:24px}.contact-main{padding-top:40px}}
+</style></head>
+<body>
+<header><div class="header-container"><a href="index.html" aria-label="Delta Fab — accueil"><img src="logo.png" alt="Delta Fab" class="header-logo" style="max-width:100%"></a><a class="contact-header-link" href="index.html">Retour au site</a></div></header>
+<main class="contact-main">
+<p class="eyebrow" style="text-align:left">CONTACT & DEVIS</p>
+<h1>Parlons de votre projet.</h1>
+<p class="contact-lead">Une médaille personnalisée, une gravure ou une pièce à fabriquer ? Particuliers et professionnels, présentez-nous votre idée pour que nous puissions étudier votre demande.</p>
+<div class="contact-layout">
+<section class="contact-panel" aria-labelledby="write-title">
+<h2 id="write-title">Écrivez-nous</h2>
+<p>Envoyez votre demande et vos visuels à :</p>
+<a class="contact-address" href="mailto:contact@deltafab.fr">contact@deltafab.fr</a>
+<div class="contact-email-options">
+<a class="button" href="mailto:contact@deltafab.fr?subject=Demande%20de%20devis%20Delta%20Fab">Ouvrir ma messagerie</a>
+<button class="button button-secondary" id="copy-email" type="button" hidden>Copier l’adresse</button>
+</div>
+<p class="contact-status" id="copy-status" role="status" aria-live="polite"></p>
+<p class="contact-help">Le bouton ouvre l’application mail configurée sur votre appareil. Si rien ne se passe, copiez l’adresse dans votre messagerie ou utilisez Gmail :</p>
+<a class="button button-secondary" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=contact%40deltafab.fr&amp;su=Demande%20de%20devis%20Delta%20Fab" target="_blank" rel="noopener noreferrer">Écrire dans Gmail ↗</a>
+<p class="contact-help">Vous pourrez joindre vos fichiers et envoyer votre message depuis votre messagerie.</p>
+</section>
+<section class="contact-panel" aria-labelledby="project-title">
+<h2 id="project-title">Pour préparer votre devis</h2>
+<p>Indiquez-nous, si possible :</p>
+<ul><li>Le type de pièce ou d’objet et la quantité souhaitée.</li><li>Les dimensions, la matière et la finition.</li><li>Le motif, le logo ou le texte à personnaliser.</li><li>La date souhaitée et le lieu de livraison.</li></ul>
+<p>Vous pouvez joindre une photo, un dessin ou votre fichier. Pour les médailles, précisez également si vous souhaitez une gravure au verso.</p>
+</section>
+</div>
+</main>
+<footer><img src="logo.png" alt="Delta Fab"><p>Delta Fab – Laser et Impression 3D</p><p>Un établissement de AM Conseils</p></footer>
+<script>
+const copyButton=document.getElementById('copy-email');
+copyButton.hidden=false;
+copyButton.addEventListener('click',async()=>{
+ const status=document.getElementById('copy-status');
+ try{await navigator.clipboard.writeText('contact@deltafab.fr');status.textContent='Adresse copiée. Collez-la dans votre messagerie.';}
+ catch{status.textContent='Sélectionnez et copiez cette adresse : contact@deltafab.fr';}
+});
+</script>
+</body></html>
