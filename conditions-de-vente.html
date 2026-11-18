@@ -1,0 +1,312 @@
+<!DOCTYPE html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Conditions générales de vente — Delta Fab</title><style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #090909;
+            color: #f5f5f5;
+            line-height: 1.6;
+        }
+
+        /* HEADER */
+
+        header {
+            background: #050505;
+            border-bottom: 1px solid #252525;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 12px 25px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header-logo {
+            width: 190px;
+            max-width: 40%;
+        }
+
+        nav a {
+            color: #ddd;
+            text-decoration: none;
+            margin-left: 25px;
+            font-size: 15px;
+        }
+
+        nav a:hover {
+            color: #e30613;
+        }
+
+        /* HERO */
+
+        .hero {
+            min-height: 85vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 70px 20px;
+            background:
+                radial-gradient(circle at center, #252525 0%, #101010 45%, #050505 100%);
+        }
+
+        .hero-content {
+            max-width: 900px;
+        }
+
+        .hero-logo {
+            width: 620px;
+            max-width: 90%;
+            margin-bottom: 35px;
+        }
+
+        .hero h1 {
+            font-size: 42px;
+            margin-bottom: 15px;
+        }
+
+        .hero h1 span {
+            color: #e30613;
+        }
+
+        .hero p {
+            color: #bbb;
+            font-size: 20px;
+            max-width: 750px;
+            margin: 0 auto 35px;
+        }
+
+        .button {
+            display: inline-block;
+            background: #e30613;
+            color: white;
+            text-decoration: none;
+            padding: 14px 28px;
+            margin: 7px;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: 0.2s;
+        }
+
+        .button:hover {
+            background: #ff1c2b;
+            transform: translateY(-2px);
+        }
+
+        .button-secondary {
+            background: transparent;
+            border: 1px solid #777;
+        }
+
+        /* SECTIONS */
+
+        section {
+            padding: 80px 20px;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 34px;
+            margin-bottom: 15px;
+        }
+
+        .section-intro {
+            text-align: center;
+            color: #aaa;
+            max-width: 750px;
+            margin: 0 auto 50px;
+        }
+
+        /* CARDS */
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+        }
+
+        .card {
+            background: #151515;
+            border: 1px solid #292929;
+            border-radius: 10px;
+            padding: 35px;
+            transition: 0.2s;
+        }
+
+        .card:hover {
+            border-color: #e30613;
+            transform: translateY(-3px);
+        }
+
+        .card h3 {
+            color: #e30613;
+            margin-bottom: 12px;
+            font-size: 22px;
+        }
+
+        .card p {
+            color: #bbb;
+        }
+
+        /* PRO / PARTICULIERS */
+
+        .audiences {
+            background: #101010;
+        }
+
+        .audience-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+
+        .audience {
+            padding: 45px;
+            background: #171717;
+            border-radius: 10px;
+            border-top: 3px solid #e30613;
+        }
+
+        .audience h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .audience ul {
+            margin: 20px 0 30px 20px;
+            color: #bbb;
+        }
+
+        .audience li {
+            margin-bottom: 8px;
+        }
+
+        /* CONTACT */
+
+        .contact {
+            text-align: center;
+            background: #141414;
+        }
+
+        .contact p {
+            color: #aaa;
+            margin: 15px auto 30px;
+            max-width: 700px;
+        }
+
+        /* FOOTER */
+
+        footer {
+            background: #050505;
+            text-align: center;
+            color: #777;
+            padding: 35px 20px;
+            font-size: 14px;
+        }
+
+        footer img {
+            width: 160px;
+            margin-bottom: 15px;
+        }
+
+        /* MOBILE */
+
+        @media (max-width: 750px) {
+
+            nav {
+                display: none;
+            }
+
+            .header-logo {
+                width: 160px;
+            }
+
+            .hero {
+                min-height: 75vh;
+            }
+
+            .hero h1 {
+                font-size: 31px;
+            }
+
+            .hero p {
+                font-size: 17px;
+            }
+
+            .cards,
+            .audience-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .audience {
+                padding: 30px;
+            }
+        }
+
+        /* Galeries de démonstration */
+        [id] { scroll-margin-top: 110px; }
+        .showcase { background: #111; }
+        .eyebrow { color: #d5ae70; text-align: center; text-transform: uppercase; letter-spacing: .16em; font-size: 12px; margin-bottom: 12px; }
+        .gallery-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 26px; }
+        .gallery-item { overflow: hidden; border: 1px solid #303030; border-radius: 10px; background: #171717; }
+        .gallery-item a { display: block; }
+        .gallery-item img { display: block; width: 100%; height: auto; }
+        .gallery-item figcaption { padding: 22px 25px; }
+        .gallery-item h3 { font-size: 21px; margin-bottom: 7px; }
+        .gallery-item p, .gallery-note { color: #aaa; font-size: 15px; }
+        .gallery-wide { grid-column: 1 / -1; }
+        .gallery-note, .gallery-cta { text-align: center; margin-top: 28px; }
+        .card img { width: 100%; height: auto; border-radius: 6px; margin-bottom: 22px; }
+        a:focus-visible { outline: 3px solid #f5bc62; outline-offset: 4px; }
+        @media (max-width: 750px) {
+            .gallery-grid { grid-template-columns: 1fr; }
+            .gallery-item figcaption { padding: 20px; }
+            .header-logo { max-width: 100%; }
+        }
+        @media (prefers-reduced-motion: reduce) {
+            html { scroll-behavior: auto; }
+            *, *::before, *::after { transition: none !important; }
+        }
+    
+main{max-width:900px;margin:auto;padding:35px 24px 70px}h1{font-size:36px;margin:25px 0}h2{font-size:23px;margin:30px 0 12px}p,li{margin-bottom:14px;color:#ccc}ul{padding-left:22px}a{color:#f4bd74}nav{display:block!important;padding:16px;line-height:2}nav a{margin:0 10px}.draft{border:1px solid #d7a04c;padding:18px;border-radius:6px;color:#f4bd74;background:#241e13}.missing{color:#f4bd74}dt{font-weight:bold;margin-top:14px}dd{margin-bottom:10px;color:#ccc}footer{padding:24px}
+</style></head><body><header><div class="header-container"><strong>DELTA FAB</strong><span>Informations légales</span></div></header><main><nav aria-label="Informations légales"><a href="mentions-legales.html">Mentions légales</a> · <a href="confidentialite.html">Confidentialité</a> · <a href="conditions-de-vente.html">Conditions générales de vente</a></nav><h1>Conditions générales de vente</h1><h2>Vendeur</h2><p>AM CONSEILS, société par actions simplifiée (SAS) au capital social de 100 €, dont le siège social est situé au 16 route du Crest, 69290 Grézieu-la-Varenne, France.</p><p>SIREN : 987 928 595.<br>SIRET du siège : 987 928 595 00014.<br>Immatriculation au Registre national des entreprises : 13 juin 2025.</p><p>E-mail : <a href="mailto:contact@deltafab.fr">contact@deltafab.fr</a><br>Téléphone : <a href="tel:+33612606288">06 12 60 62 88</a>.</p><h2>Produits et personnalisation</h2><p>Les médailles proposées ont un diamètre standard de 40 mm. Le client choisit une finition de couleur or, argent ou bronze. Ces couleurs décrivent uniquement l’apparence de la finition et ne désignent pas la matière de la médaille. La matière peut varier selon l’approvisionnement ; celle du lot proposé est précisée au client avant paiement.</p><h2>Examen manuel et validation du visuel</h2><p>Chaque projet fait l’objet d’un examen manuel préalable par Delta Fab. Le dépôt d’un fichier ne vaut pas acceptation du projet et ne déclenche aucune fabrication automatique. Delta Fab peut refuser une demande pour un motif légitime, notamment son caractère illicite, des droits de reproduction non établis ou une impossibilité technique.</p><p>Le client doit disposer des droits nécessaires à la reproduction des dessins, photographies, logos et textes transmis. Delta Fab peut demander un justificatif. Les contenus interdits par la loi sont refusés, notamment les contenus pédopornographiques et les contenus racistes ou incitant à la haine ou à la violence lorsqu’ils sont illicites.</p><p>Delta Fab adresse un aperçu du visuel au client par e-mail. La gravure commence uniquement après acceptation du projet par Delta Fab et accord écrit explicite du client par retour d’e-mail sur ce visuel. Le silence du client ne vaut pas accord. Toute modification ultérieure du visuel nécessite une nouvelle validation écrite.</p><h2>Refus avant fabrication et remboursement</h2><p>Si Delta Fab a des réserves sur un motif après paiement, un échange par e-mail est d’abord proposé pour rechercher une modification acceptable. Aucun projet n’est fabriqué sans validation écrite du visuel par le client. Si aucune solution n’est convenue, la commande est annulée et intégralement remboursée, frais de livraison compris, sans frais pour le client et par le moyen de paiement initial sauf accord exprès sur un autre moyen sans frais.</p><p>Delta Fab se réserve le droit de refuser un projet illégal, portant atteinte aux droits de tiers ou techniquement irréalisable. L’examen est effectué par une personne ; aucun tri automatique n’est appliqué.</p><h2>Fichiers de gravure</h2><p>Cette suppression concerne les fichiers de fabrication. Les documents contractuels et comptables nécessaires sont conservés selon leurs obligations et finalités propres.</p><p>Les images transmises servent uniquement à préparer et fabriquer la commande. Après réalisation, Delta Fab supprime les fichiers du stockage de la boutique et toute copie de travail locale ou reçue par e-mail. L’opérateur confirme ces suppressions dans la gestion des commandes avant d’enregistrer la fin de fabrication. Les fichiers ne sont pas archivés pour une commande ultérieure ; le client conserve ses originaux et les transmet à nouveau s’il souhaite une autre réalisation.</p><h2>Présentation des réalisations</h2><p>Delta Fab peut solliciter une autorisation écrite, distincte et facultative, pour présenter une photographie de la réalisation sur deltafab.fr et ses réseaux sociaux à des fins de présentation de son savoir-faire. Le refus de cette autorisation est sans conséquence sur la commande.</p><p>L’autorisation identifie la photographie concernée, les supports de diffusion, la durée et la portée territoriale de la diffusion. Elle ne permet ni de céder le motif à des tiers ni de le reproduire pour fabriquer des produits destinés à d’autres clients. Les droits de propriété intellectuelle et les droits des personnes représentées doivent être vérifiés avant publication ; les noms et informations personnelles sont masqués sauf autorisation appropriée.</p><p>La photographie autorisée pour la communication est distincte du fichier source de gravure supprimé après réalisation. Sa conservation est limitée à la durée autorisée. Lorsqu’un traitement de données personnelles repose sur le consentement, celui-ci peut être retiré en écrivant à contact@deltafab.fr, sans remettre en cause la licéité du traitement antérieur au retrait.</p><h2>Prix et livraison</h2><p>Prix finaux particuliers : 45 € par médaille recto seul ; 50 € avec gravure simple de surface au verso ; 65 € avec embossage complexe au verso. Frais d’envoi en France métropolitaine : 5 € par médaille, soit 10 € pour deux médailles. Les demandes de volume font l’objet d’un devis. TVA non applicable, art. 293 B du CGI, selon le régime déclaré par le vendeur.</p><p>Après réception de la validation écrite du visuel par e-mail, la réception de la commande est prévue sous 10 à 12 jours ouvrés, fabrication et acheminement compris. Les jours ouvrés sont les jours du lundi au vendredi, hors jours fériés. La fabrication est estimée à environ 48 heures et est comprise dans ce délai. Delta Fab reste l’interlocuteur du client et traite les difficultés de livraison ; les droits légaux du client, notamment jusqu’à la prise de possession physique du colis, restent applicables.</p><p>Pour commander, le client choisit une couleur (or, argent ou bronze) et les options du verso ; le diamètre standard est de 40 mm. Il transmet son motif, renseigne l’adresse de livraison, vérifie le récapitulatif, accepte les présentes conditions puis procède au paiement sécurisé par Stripe. La commande est confirmée après acceptation du paiement. Une facture acquittée et un récapitulatif de commande sont adressés par e-mail. La fabrication ne commence jamais avant l’accord écrit du client sur le visuel adressé par e-mail. Le délai annoncé de réception commence à compter de cette validation.</p><h2>Rétractation</h2><p>La boutique en ligne ne propose que des médailles fabriquées à partir du motif fourni par le client. Ces biens sont confectionnés selon les spécifications du client ou nettement personnalisés. En application de l’article L. 221-28, 3° du Code de la consommation, le droit de rétractation ne s’applique pas à ces commandes. Cette exception ne limite pas les garanties légales de conformité et des vices cachés. En cas de doute avant achat, contactez contact@deltafab.fr.</p><h2>Garanties et réclamations</h2><p>La personnalisation ne supprime pas les garanties légales. Pour les biens neufs, la garantie légale de conformité couvre les défauts apparaissant dans les deux ans suivant la livraison. Le client peut demander une réparation ou un remplacement sans frais, en principe sous trente jours. Dans les cas prévus par la loi, une réduction du prix ou la résolution de la vente est possible. La garantie des vices cachés peut être exercée dans les deux ans suivant la découverte du vice. Les réclamations sont adressées à contact@deltafab.fr ou à AM CONSEILS — Delta Fab, 16 route du Crest, 69290 Grézieu-la-Varenne. Delta Fab communique les modalités de retour nécessaires ; les frais liés à la mise en conformité ne sont pas mis à la charge du client.</p><section class="garanties" aria-label="Garanties légales" style="border:2px solid #aaa;padding:20px;margin:24px 0">
+<h3>Garanties légales — encadré réglementaire</h3>
+<p>Le consommateur dispose d'un délai de deux ans à compter de la délivrance du bien pour obtenir la mise en œuvre de la garantie légale de conformité en cas d'apparition d'un défaut de conformité. Durant ce délai, le consommateur n'est tenu d'établir que l'existence du défaut de conformité et non la date d'apparition de celui-ci.</p>
+<p>Lorsque le contrat de vente du bien prévoit la fourniture d'un contenu numérique ou d'un service numérique de manière continue pendant une durée supérieure à deux ans, la garantie légale est applicable à ce contenu numérique ou ce service numérique tout au long de la période de fourniture prévue. Durant ce délai, le consommateur n'est tenu d'établir que l'existence du défaut de conformité affectant le contenu numérique ou le service numérique et non la date d'apparition de celui-ci.</p>
+<p>La garantie légale de conformité emporte obligation pour le professionnel, le cas échéant, de fournir toutes les mises à jour nécessaires au maintien de la conformité du bien.</p>
+<p>La garantie légale de conformité donne au consommateur droit à la réparation ou au remplacement du bien dans un délai de trente jours suivant sa demande, sans frais et sans inconvénient majeur pour lui.</p>
+<p>Si le bien est réparé dans le cadre de la garantie légale de conformité, le consommateur bénéficie d'une extension de six mois de la garantie initiale.</p>
+<p>Si le consommateur demande la réparation du bien, mais que le vendeur impose le remplacement, la garantie légale de conformité est renouvelée pour une période de deux ans à compter de la date de remplacement du bien.</p>
+<p>Le consommateur peut obtenir une réduction du prix d'achat en conservant le bien ou mettre fin au contrat en se faisant rembourser intégralement contre restitution du bien, si :</p>
+<p>1° Le professionnel refuse de réparer ou de remplacer le bien ;</p>
+<p>2° La réparation ou le remplacement du bien intervient après un délai de trente jours ;</p>
+<p>3° La réparation ou le remplacement du bien occasionne un inconvénient majeur pour le consommateur, notamment lorsque le consommateur supporte définitivement les frais de reprise ou d'enlèvement du bien non conforme, ou s'il supporte les frais d'installation du bien réparé ou de remplacement ;</p>
+<p>4° La non-conformité du bien persiste en dépit de la tentative de mise en conformité du vendeur restée infructueuse.</p>
+<p>Le consommateur a également droit à une réduction du prix du bien ou à la résolution du contrat lorsque le défaut de conformité est si grave qu'il justifie que la réduction du prix ou la résolution du contrat soit immédiate. Le consommateur n'est alors pas tenu de demander la réparation ou le remplacement du bien au préalable.</p>
+<p>Le consommateur n'a pas droit à la résolution de la vente si le défaut de conformité est mineur.</p>
+<p>Toute période d'immobilisation du bien en vue de sa réparation ou de son remplacement suspend la garantie qui restait à courir jusqu'à la délivrance du bien remis en état.</p>
+<p>Les droits mentionnés ci-dessus résultent de l'application des articles L. 217-1 à L. 217-32 du code de la consommation.</p>
+<p>Le vendeur qui fait obstacle de mauvaise foi à la mise en œuvre de la garantie légale de conformité encourt une amende civile d'un montant maximal de 300 000 euros, qui peut être porté jusqu'à 10 % du chiffre d'affaires moyen annuel (article L. 241-5 du code de la consommation).</p>
+<p>Le consommateur bénéficie également de la garantie légale des vices cachés en application des articles 1641 à 1649 du code civil, pendant une durée de deux ans à compter de la découverte du défaut. Cette garantie donne droit à une réduction de prix si le bien est conservé ou à un remboursement intégral contre restitution du bien.</p>
+</section>
+<p>Texte réglementaire : <a href="https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000045981314">annexe à l’article D.211-2 du Code de la consommation, partie A</a>.</p>
+<h2>Médiation</h2><p>AM CONSEILS, exploitant Delta Fab, adhère au Centre de la Médiation de la Consommation de Conciliateurs de justice (CM2C).</p><p>Après une réclamation écrite préalable à <a href="mailto:contact@deltafab.fr">contact@deltafab.fr</a> ou au siège d’AM CONSEILS, si le différend n’est pas résolu, le client consommateur peut recourir gratuitement à CM2C, sous réserve des conditions de recevabilité. La demande doit être présentée dans un délai d’un an à compter de la réclamation écrite au professionnel.</p><p>CM2C — 49 rue de Ponthieu, 75008 Paris, France.<br>Site : <a href="https://www.cm2c.net/">www.cm2c.net</a>.<br>Saisine : <a href="https://www.cm2c.net/declarer-un-litige.php">formulaire en ligne</a>, courrier à l’adresse ci-dessus ou e-mail à <a href="mailto:declarer-un-litige@cm2c.net">declarer-un-litige@cm2c.net</a>.</p><p>La médiation est facultative et ne prive pas le consommateur de son droit de saisir la juridiction compétente.</p></main><footer>AM CONSEILS · Delta Fab<nav aria-label="Informations légales"><a href="mentions-legales.html">Mentions légales</a> · <a href="confidentialite.html">Confidentialité</a> · <a href="conditions-de-vente.html">Conditions générales de vente</a></nav></footer></body></html>
