@@ -1,0 +1,291 @@
+<!DOCTYPE html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Confidentialité et cookies — Delta Fab</title><style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #090909;
+            color: #f5f5f5;
+            line-height: 1.6;
+        }
+
+        /* HEADER */
+
+        header {
+            background: #050505;
+            border-bottom: 1px solid #252525;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 12px 25px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header-logo {
+            width: 190px;
+            max-width: 40%;
+        }
+
+        nav a {
+            color: #ddd;
+            text-decoration: none;
+            margin-left: 25px;
+            font-size: 15px;
+        }
+
+        nav a:hover {
+            color: #e30613;
+        }
+
+        /* HERO */
+
+        .hero {
+            min-height: 85vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 70px 20px;
+            background:
+                radial-gradient(circle at center, #252525 0%, #101010 45%, #050505 100%);
+        }
+
+        .hero-content {
+            max-width: 900px;
+        }
+
+        .hero-logo {
+            width: 620px;
+            max-width: 90%;
+            margin-bottom: 35px;
+        }
+
+        .hero h1 {
+            font-size: 42px;
+            margin-bottom: 15px;
+        }
+
+        .hero h1 span {
+            color: #e30613;
+        }
+
+        .hero p {
+            color: #bbb;
+            font-size: 20px;
+            max-width: 750px;
+            margin: 0 auto 35px;
+        }
+
+        .button {
+            display: inline-block;
+            background: #e30613;
+            color: white;
+            text-decoration: none;
+            padding: 14px 28px;
+            margin: 7px;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: 0.2s;
+        }
+
+        .button:hover {
+            background: #ff1c2b;
+            transform: translateY(-2px);
+        }
+
+        .button-secondary {
+            background: transparent;
+            border: 1px solid #777;
+        }
+
+        /* SECTIONS */
+
+        section {
+            padding: 80px 20px;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 34px;
+            margin-bottom: 15px;
+        }
+
+        .section-intro {
+            text-align: center;
+            color: #aaa;
+            max-width: 750px;
+            margin: 0 auto 50px;
+        }
+
+        /* CARDS */
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+        }
+
+        .card {
+            background: #151515;
+            border: 1px solid #292929;
+            border-radius: 10px;
+            padding: 35px;
+            transition: 0.2s;
+        }
+
+        .card:hover {
+            border-color: #e30613;
+            transform: translateY(-3px);
+        }
+
+        .card h3 {
+            color: #e30613;
+            margin-bottom: 12px;
+            font-size: 22px;
+        }
+
+        .card p {
+            color: #bbb;
+        }
+
+        /* PRO / PARTICULIERS */
+
+        .audiences {
+            background: #101010;
+        }
+
+        .audience-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+
+        .audience {
+            padding: 45px;
+            background: #171717;
+            border-radius: 10px;
+            border-top: 3px solid #e30613;
+        }
+
+        .audience h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .audience ul {
+            margin: 20px 0 30px 20px;
+            color: #bbb;
+        }
+
+        .audience li {
+            margin-bottom: 8px;
+        }
+
+        /* CONTACT */
+
+        .contact {
+            text-align: center;
+            background: #141414;
+        }
+
+        .contact p {
+            color: #aaa;
+            margin: 15px auto 30px;
+            max-width: 700px;
+        }
+
+        /* FOOTER */
+
+        footer {
+            background: #050505;
+            text-align: center;
+            color: #777;
+            padding: 35px 20px;
+            font-size: 14px;
+        }
+
+        footer img {
+            width: 160px;
+            margin-bottom: 15px;
+        }
+
+        /* MOBILE */
+
+        @media (max-width: 750px) {
+
+            nav {
+                display: none;
+            }
+
+            .header-logo {
+                width: 160px;
+            }
+
+            .hero {
+                min-height: 75vh;
+            }
+
+            .hero h1 {
+                font-size: 31px;
+            }
+
+            .hero p {
+                font-size: 17px;
+            }
+
+            .cards,
+            .audience-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .audience {
+                padding: 30px;
+            }
+        }
+
+        /* Galeries de démonstration */
+        [id] { scroll-margin-top: 110px; }
+        .showcase { background: #111; }
+        .eyebrow { color: #d5ae70; text-align: center; text-transform: uppercase; letter-spacing: .16em; font-size: 12px; margin-bottom: 12px; }
+        .gallery-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 26px; }
+        .gallery-item { overflow: hidden; border: 1px solid #303030; border-radius: 10px; background: #171717; }
+        .gallery-item a { display: block; }
+        .gallery-item img { display: block; width: 100%; height: auto; }
+        .gallery-item figcaption { padding: 22px 25px; }
+        .gallery-item h3 { font-size: 21px; margin-bottom: 7px; }
+        .gallery-item p, .gallery-note { color: #aaa; font-size: 15px; }
+        .gallery-wide { grid-column: 1 / -1; }
+        .gallery-note, .gallery-cta { text-align: center; margin-top: 28px; }
+        .card img { width: 100%; height: auto; border-radius: 6px; margin-bottom: 22px; }
+        a:focus-visible { outline: 3px solid #f5bc62; outline-offset: 4px; }
+        @media (max-width: 750px) {
+            .gallery-grid { grid-template-columns: 1fr; }
+            .gallery-item figcaption { padding: 20px; }
+            .header-logo { max-width: 100%; }
+        }
+        @media (prefers-reduced-motion: reduce) {
+            html { scroll-behavior: auto; }
+            *, *::before, *::after { transition: none !important; }
+        }
+    
+main{max-width:900px;margin:auto;padding:35px 24px 70px}h1{font-size:36px;margin:25px 0}h2{font-size:23px;margin:30px 0 12px}p,li{margin-bottom:14px;color:#ccc}ul{padding-left:22px}a{color:#f4bd74}nav{display:block!important;padding:16px;line-height:2}nav a{margin:0 10px}.draft{border:1px solid #d7a04c;padding:18px;border-radius:6px;color:#f4bd74;background:#241e13}.missing{color:#f4bd74}dt{font-weight:bold;margin-top:14px}dd{margin-bottom:10px;color:#ccc}footer{padding:24px}
+</style></head><body><header><div class="header-container"><strong>DELTA FAB</strong><span>Informations légales</span></div></header><main><nav aria-label="Informations légales"><a href="mentions-legales.html">Mentions légales</a> · <a href="confidentialite.html">Confidentialité</a> · <a href="conditions-de-vente.html">Conditions générales de vente</a></nav><h1>Confidentialité et cookies</h1><h2>Responsable du traitement</h2><p>AM CONSEILS, société par actions simplifiée (SAS) au capital social de 100 €, dont le siège social est situé au 16 route du Crest, 69290 Grézieu-la-Varenne, France.</p><p>SIREN : 987 928 595.<br>SIRET du siège : 987 928 595 00014.<br>Immatriculation au Registre national des entreprises : 13 juin 2025.</p><p>E-mail : <a href="mailto:contact@deltafab.fr">contact@deltafab.fr</a><br>Téléphone : <a href="tel:+33612606288">06 12 60 62 88</a>.</p><h2>Demandes de contact et de devis</h2><p>Lorsque vous nous écrivez, nous utilisons vos coordonnées, le contenu de votre message et les fichiers que vous choisissez de joindre pour traiter votre demande. Les demandes de devis reposent sur les mesures précontractuelles prises à votre demande. La gestion des autres questions repose sur notre intérêt légitime à répondre aux personnes qui nous contactent.</p><p>Transmettez uniquement les informations et fichiers utiles à votre projet. Certaines informations sont nécessaires pour vous répondre ou établir un devis ; leur absence peut empêcher le traitement de la demande.</p><h2>Destinataires et conservation</h2><p>Les informations sont destinées aux personnes habilitées d’AM CONSEILS chargées de traiter votre demande et aux prestataires techniques nécessaires à ce traitement.</p><p>Les messages envoyés à contact@deltafab.fr sont reçus chez IONOS puis redirigés vers une boîte Gmail grand public de Google. IONOS et Google traitent les données nécessaires à l’acheminement et à la réception des messages et pièces jointes. Les traitements peuvent impliquer des entités ou des infrastructures hors de l’Espace économique européen ; consultez les <a href="https://www.ionos.fr/terms-gtc/clause-de-confidentialite/">informations de confidentialité IONOS</a> et les <a href="https://policies.google.com/privacy?hl=fr">règles de confidentialité Google</a>. Cette adresse n’est pas présentée comme une offre Google Workspace.</p><h2>Durées de conservation</h2><p>Les durées varient selon la finalité du traitement. Les données ne sont pas réutilisées pour fabriquer un autre exemplaire.</p><ul><li><strong>Images et fichiers transmis pour une commande :</strong> suppression après réalisation, lorsque l’opérateur clôture la fabrication, y compris les copies de travail locales et les pièces jointes détenues par Delta Fab.</li><li><strong>Images d’un panier non payé :</strong> suppression automatique après sept jours uniquement si Stripe confirme que la session de paiement a expiré sans paiement.</li><li><strong>Demandes de devis sans commande :</strong> messages et coordonnées supprimés au plus tard trois ans après le dernier contact.</li><li><strong>Factures et pièces justificatives comptables :</strong> conservation pendant dix ans à compter de la clôture de l’exercice concerné.</li><li><strong>Contrats électroniques d’au moins 120 € :</strong> conservation pendant la période précédant la livraison, puis pendant dix ans à compter de celle-ci, conformément aux obligations applicables. Le client peut en demander l’accès à contact@deltafab.fr.</li><li><strong>Autres éléments contractuels utiles à la preuve :</strong> archivage pendant cinq ans après la fin de la relation contractuelle, sauf durée légale supérieure applicable à une pièce.</li><li><strong>Photographies de réalisations utilisées pour la communication :</strong> conservation uniquement pendant la durée de l’autorisation écrite distincte et facultative.</li></ul><p>En cas de litige, seules les informations nécessaires à sa gestion et à la défense des droits peuvent être isolées dans une archive à accès restreint, pendant le temps nécessaire au traitement et aux délais de recours applicables. Les prestataires de messagerie et d’hébergement peuvent conserver temporairement des copies dans leurs sauvegardes techniques selon leurs propres durées.</p><h2>Fichiers de gravure</h2><p>Les fichiers sont utilisés pour préparer le visuel et réaliser la gravure. Après réalisation, Delta Fab les supprime de la boutique et supprime également ses copies de travail locales et les pièces jointes détenues dans sa messagerie. L’opérateur confirme cette suppression lorsqu’il clôture la fabrication. Les fichiers ne sont pas archivés pour de futures commandes ; le client conserve ses originaux et les transmet à nouveau pour une autre demande.</p><p>Les factures, échanges utiles à la gestion de la commande et autres justificatifs sont conservés séparément selon les durées indiquées ci-dessus. Les sauvegardes techniques des prestataires peuvent subsister temporairement selon leurs propres règles.</p><h2>Présentation des réalisations</h2><p>Delta Fab ne publie pas automatiquement les réalisations des clients. Une photographie ne peut être diffusée sur le site ou les réseaux sociaux qu’après une autorisation écrite distincte et facultative, précisant la photographie, les supports et la durée. Le refus n’a aucune conséquence sur la commande.</p><p>Cette autorisation permet uniquement de présenter le savoir-faire de Delta Fab ; elle ne permet ni de revendre le motif ni de fabriquer des exemplaires pour d’autres clients. Les droits de propriété intellectuelle et les droits des personnes représentées doivent être vérifiés avant diffusion. Le client peut retirer son consentement en écrivant à contact@deltafab.fr ; ce retrait ne remet pas en cause les traitements antérieurs.</p><h2>Commandes en ligne</h2><p>Les coordonnées, adresses de livraison et de facturation, choix de personnalisation, commentaires et fichiers sont nécessaires à la préparation et à l’exécution de la commande. Ces traitements reposent sur les mesures précontractuelles et l’exécution du contrat. La tenue des factures repose sur les obligations légales du vendeur. Aucun rejet automatique du motif n’est effectué : son examen est humain.</p><p>Cloudflare héberge le service de commande et les fichiers dans un stockage à accès restreint. Stripe assure le paiement sur sa page sécurisée ; Delta Fab ne reçoit pas le numéro complet de carte bancaire. Qonto reçoit les données nécessaires à la facturation et à l’envoi de la facture. La Poste / Colissimo reçoit les informations nécessaires à la livraison. Google traite les échanges par e-mail.</p><p>Les images sont stockées dans un espace Cloudflare à accès restreint ; les services de commande, paiement et facturation peuvent impliquer des traitements hors de l’Espace économique européen. Cloudflare prévoit des clauses contractuelles types pour certains transferts internationaux dans son <a href="https://www.cloudflare.com/cloudflare-customer-scc/">addendum de traitement des données</a>. Stripe traite les données nécessaires au paiement ; Qonto reçoit les données nécessaires à l’émission et à l’envoi de la facture ; La Poste / Colissimo reçoit les informations nécessaires à la livraison.</p><h2>Navigation et hébergement</h2><p>Le site vitrine est hébergé par Cloudflare Pages. Le service de commande utilise Cloudflare Workers et les images sont stockées temporairement dans Cloudflare R2, dans un bucket situé en région européenne. Les journaux d’exécution du Worker sont activés pour le diagnostic et la sécurité ; ils peuvent contenir des informations techniques sur les requêtes et sont conservés jusqu’à trois jours avec l’offre Workers Free actuellement utilisée. Cloudflare peut traiter ces données dans ses centres de données mondiaux ; consultez ses <a href="https://www.cloudflare.com/cloudflare-customer-scc/">clauses contractuelles types</a>.</p><h2>Cookies et liens externes</h2><p>La version examinée du site ne contient pas d’outil publicitaire ou de mesure d’audience intégré. Le bouton de copie de l’adresse n’envoie pas votre message : il copie uniquement notre adresse e-mail dans le presse-papiers à votre demande.</p><p>Les boutons de messagerie ouvrent votre application de courrier ou, si vous choisissez Gmail, le service externe de Google. Le message et ses pièces jointes sont envoyés depuis la messagerie que vous utilisez. Les règles propres à ce service s’appliquent alors.</p><p>Les journaux techniques et adresses IP peuvent être traités par Cloudflare pour assurer la sécurité et le fonctionnement du site. Lorsque vous quittez le site pour la page de paiement Stripe ou votre messagerie, les règles et traceurs éventuels du service externe s’appliquent.</p><h2>Vos droits</h2><p>Vous pouvez demander l’accès à vos données, leur rectification et, lorsque les conditions légales sont réunies, leur effacement, la limitation du traitement ou leur portabilité. Vous pouvez vous opposer, pour des raisons tenant à votre situation particulière, à un traitement fondé sur l’intérêt légitime.</p><p>Adressez votre demande à contact@deltafab.fr. Nous répondons en principe dans un délai d’un mois ; une prolongation est possible dans les conditions légales et vous en serez informé. En cas de doute raisonnable sur votre identité, des informations nécessaires à sa vérification pourront être demandées.</p><p>Vous pouvez également adresser une réclamation à la <a href="https://www.cnil.fr/fr/plaintes">CNIL</a>.</p></main><footer>AM CONSEILS · Delta Fab<nav aria-label="Informations légales"><a href="mentions-legales.html">Mentions légales</a> · <a href="confidentialite.html">Confidentialité</a> · <a href="conditions-de-vente.html">Conditions générales de vente</a></nav></footer></body></html>
