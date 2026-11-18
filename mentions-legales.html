@@ -1,0 +1,291 @@
+<!DOCTYPE html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Mentions légales — Delta Fab</title><style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #090909;
+            color: #f5f5f5;
+            line-height: 1.6;
+        }
+
+        /* HEADER */
+
+        header {
+            background: #050505;
+            border-bottom: 1px solid #252525;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 12px 25px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header-logo {
+            width: 190px;
+            max-width: 40%;
+        }
+
+        nav a {
+            color: #ddd;
+            text-decoration: none;
+            margin-left: 25px;
+            font-size: 15px;
+        }
+
+        nav a:hover {
+            color: #e30613;
+        }
+
+        /* HERO */
+
+        .hero {
+            min-height: 85vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 70px 20px;
+            background:
+                radial-gradient(circle at center, #252525 0%, #101010 45%, #050505 100%);
+        }
+
+        .hero-content {
+            max-width: 900px;
+        }
+
+        .hero-logo {
+            width: 620px;
+            max-width: 90%;
+            margin-bottom: 35px;
+        }
+
+        .hero h1 {
+            font-size: 42px;
+            margin-bottom: 15px;
+        }
+
+        .hero h1 span {
+            color: #e30613;
+        }
+
+        .hero p {
+            color: #bbb;
+            font-size: 20px;
+            max-width: 750px;
+            margin: 0 auto 35px;
+        }
+
+        .button {
+            display: inline-block;
+            background: #e30613;
+            color: white;
+            text-decoration: none;
+            padding: 14px 28px;
+            margin: 7px;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: 0.2s;
+        }
+
+        .button:hover {
+            background: #ff1c2b;
+            transform: translateY(-2px);
+        }
+
+        .button-secondary {
+            background: transparent;
+            border: 1px solid #777;
+        }
+
+        /* SECTIONS */
+
+        section {
+            padding: 80px 20px;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 34px;
+            margin-bottom: 15px;
+        }
+
+        .section-intro {
+            text-align: center;
+            color: #aaa;
+            max-width: 750px;
+            margin: 0 auto 50px;
+        }
+
+        /* CARDS */
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+        }
+
+        .card {
+            background: #151515;
+            border: 1px solid #292929;
+            border-radius: 10px;
+            padding: 35px;
+            transition: 0.2s;
+        }
+
+        .card:hover {
+            border-color: #e30613;
+            transform: translateY(-3px);
+        }
+
+        .card h3 {
+            color: #e30613;
+            margin-bottom: 12px;
+            font-size: 22px;
+        }
+
+        .card p {
+            color: #bbb;
+        }
+
+        /* PRO / PARTICULIERS */
+
+        .audiences {
+            background: #101010;
+        }
+
+        .audience-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+
+        .audience {
+            padding: 45px;
+            background: #171717;
+            border-radius: 10px;
+            border-top: 3px solid #e30613;
+        }
+
+        .audience h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .audience ul {
+            margin: 20px 0 30px 20px;
+            color: #bbb;
+        }
+
+        .audience li {
+            margin-bottom: 8px;
+        }
+
+        /* CONTACT */
+
+        .contact {
+            text-align: center;
+            background: #141414;
+        }
+
+        .contact p {
+            color: #aaa;
+            margin: 15px auto 30px;
+            max-width: 700px;
+        }
+
+        /* FOOTER */
+
+        footer {
+            background: #050505;
+            text-align: center;
+            color: #777;
+            padding: 35px 20px;
+            font-size: 14px;
+        }
+
+        footer img {
+            width: 160px;
+            margin-bottom: 15px;
+        }
+
+        /* MOBILE */
+
+        @media (max-width: 750px) {
+
+            nav {
+                display: none;
+            }
+
+            .header-logo {
+                width: 160px;
+            }
+
+            .hero {
+                min-height: 75vh;
+            }
+
+            .hero h1 {
+                font-size: 31px;
+            }
+
+            .hero p {
+                font-size: 17px;
+            }
+
+            .cards,
+            .audience-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .audience {
+                padding: 30px;
+            }
+        }
+
+        /* Galeries de démonstration */
+        [id] { scroll-margin-top: 110px; }
+        .showcase { background: #111; }
+        .eyebrow { color: #d5ae70; text-align: center; text-transform: uppercase; letter-spacing: .16em; font-size: 12px; margin-bottom: 12px; }
+        .gallery-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 26px; }
+        .gallery-item { overflow: hidden; border: 1px solid #303030; border-radius: 10px; background: #171717; }
+        .gallery-item a { display: block; }
+        .gallery-item img { display: block; width: 100%; height: auto; }
+        .gallery-item figcaption { padding: 22px 25px; }
+        .gallery-item h3 { font-size: 21px; margin-bottom: 7px; }
+        .gallery-item p, .gallery-note { color: #aaa; font-size: 15px; }
+        .gallery-wide { grid-column: 1 / -1; }
+        .gallery-note, .gallery-cta { text-align: center; margin-top: 28px; }
+        .card img { width: 100%; height: auto; border-radius: 6px; margin-bottom: 22px; }
+        a:focus-visible { outline: 3px solid #f5bc62; outline-offset: 4px; }
+        @media (max-width: 750px) {
+            .gallery-grid { grid-template-columns: 1fr; }
+            .gallery-item figcaption { padding: 20px; }
+            .header-logo { max-width: 100%; }
+        }
+        @media (prefers-reduced-motion: reduce) {
+            html { scroll-behavior: auto; }
+            *, *::before, *::after { transition: none !important; }
+        }
+    
+main{max-width:900px;margin:auto;padding:35px 24px 70px}h1{font-size:36px;margin:25px 0}h2{font-size:23px;margin:30px 0 12px}p,li{margin-bottom:14px;color:#ccc}ul{padding-left:22px}a{color:#f4bd74}nav{display:block!important;padding:16px;line-height:2}nav a{margin:0 10px}.draft{border:1px solid #d7a04c;padding:18px;border-radius:6px;color:#f4bd74;background:#241e13}.missing{color:#f4bd74}dt{font-weight:bold;margin-top:14px}dd{margin-bottom:10px;color:#ccc}footer{padding:24px}
+</style></head><body><header><div class="header-container"><strong>DELTA FAB</strong><span>Informations légales</span></div></header><main><nav aria-label="Informations légales"><a href="mentions-legales.html">Mentions légales</a> · <a href="confidentialite.html">Confidentialité</a> · <a href="conditions-de-vente.html">Conditions générales de vente</a></nav><h1>Mentions légales</h1><h2>Éditeur du site</h2><p>AM CONSEILS, société par actions simplifiée (SAS) au capital social de 100 €, dont le siège social est situé au 16 route du Crest, 69290 Grézieu-la-Varenne, France.</p><p>SIREN : 987 928 595.<br>SIRET du siège : 987 928 595 00014.<br>Immatriculation au Registre national des entreprises : 13 juin 2025.</p><p>E-mail : <a href="mailto:contact@deltafab.fr">contact@deltafab.fr</a><br>Téléphone : <a href="tel:+33612606288">06 12 60 62 88</a>.</p><p>Delta Fab présente les activités de gravure laser, de personnalisation et d’impression 3D d’AM CONSEILS.</p><p>Directeur de publication : Alexis Ménard.</p><h2>Hébergement</h2><p>Le site vitrine est hébergé par Cloudflare Pages ; le service de commande et le stockage des images utilisent Cloudflare Workers et Cloudflare R2.</p><p>Le site vitrine et le service de commande sont hébergés par Cloudflare, Inc., 101 Townsend Street, San Francisco, CA 94107, États-Unis. Cloudflare peut être joint via <a href="https://support.cloudflare.com/">son centre d’assistance</a>. Le code source du site est hébergé par GitHub, Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, États-Unis ; l’assistance GitHub est accessible sur <a href="https://support.github.com/contact">support.github.com/contact</a>.</p><h2>Présentation des créations</h2><p>Les images identifiées comme visuels de démonstration illustrent des possibilités de personnalisation. Certaines sont générées par intelligence artificielle. Elles ne constituent pas une preuve de fabrication ou de livraison des objets représentés. Les caractéristiques d’une réalisation sont précisées dans le devis ou la commande.</p><h2>Propriété intellectuelle</h2><p>Les contenus du site sont soumis aux droits applicables. Les signes, emblèmes, marques et autres éléments appartenant à des tiers demeurent soumis aux droits de leurs titulaires. Leur présentation ne signifie pas que Delta Fab bénéficie d’un agrément ou d’une affiliation officielle.</p><h2>Contact et réclamations</h2><p>Pour toute question ou réclamation, écrivez à contact@deltafab.fr ou à l’adresse du siège indiquée ci-dessus.</p><h2>Médiation de la consommation</h2><p>AM CONSEILS, exploitant Delta Fab, adhère au Centre de la Médiation de la Consommation de Conciliateurs de justice (CM2C).</p><p>Après une réclamation écrite préalable à <a href="mailto:contact@deltafab.fr">contact@deltafab.fr</a> ou au siège d’AM CONSEILS, si le différend n’est pas résolu, le client consommateur peut recourir gratuitement à CM2C, sous réserve des conditions de recevabilité. La demande doit être présentée dans un délai d’un an à compter de la réclamation écrite au professionnel.</p><p>CM2C — 49 rue de Ponthieu, 75008 Paris, France.<br>Site : <a href="https://www.cm2c.net/">www.cm2c.net</a>.<br>Saisine : <a href="https://www.cm2c.net/declarer-un-litige.php">formulaire en ligne</a>, courrier à l’adresse ci-dessus ou e-mail à <a href="mailto:declarer-un-litige@cm2c.net">declarer-un-litige@cm2c.net</a>.</p><p>La médiation est facultative et ne prive pas le consommateur de son droit de saisir la juridiction compétente.</p></main><footer>AM CONSEILS · Delta Fab<nav aria-label="Informations légales"><a href="mentions-legales.html">Mentions légales</a> · <a href="confidentialite.html">Confidentialité</a> · <a href="conditions-de-vente.html">Conditions générales de vente</a></nav></footer></body></html>
